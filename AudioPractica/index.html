@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Audio Player</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+    <div class="page-header">
+  			<h1>Player</h1>
+		</div>
+        <section id="list">
+          
+        </section>
+        <div class="row">
+        	<div class="col-xs-12 col-sm-12 col-md-8 col-lg-6 col-md-offset-2">
+        		<!-- <ul class="navbar navbar-inverse">
+    					<button type="button" class="btn btn-default navbar-btn" onclick="player.play()">
+    						<i class="fa fa-play"></i>
+    					</button>
+    					<button type="button" class="btn btn-default navbar-btn" onclick="player.pause()">
+    						<i class="fa fa-pause"></i>
+    					</button>
+    					<button type="button" class="btn btn-default navbar-btn" onclick="player.repeat(this)">
+    						<i class="fa fa-repeat"></i>
+    					</button>
+    					<button type="button" class="btn btn-default navbar-btn" onclick="player.volume(true)">
+    						<i class="fa fa-plus"></i>
+    					</button>
+    					<button type="button" class="btn btn-default navbar-btn" onclick="player.volume(false)">
+    						<i class="fa fa-minus"></i>
+    					</button>
+    					<button type="button" class="btn btn-default navbar-btn active" disabled id="currentTime">
+    					</button>
+    					<button type="button" class="btn btn-default navbar-btn active" disabled id="duration">
+    					</button>
+                        <button type="button" class="btn btn-default navbar-btn active" disabled id="currentVolume">
+                        </button>
+				    </ul> -->
+            <button id="previous"></button>
+            <button id="play-pause"></button>
+            <button id="next"></button>
+            <button id="currentVolume"></button>
+
+            <div id="currentTime"></div>
+            <button id="duration"></button>
+
+        	</div>
+        </div>
+        <script src="listModule.js"></script>
+        <script src="audioModule.js"></script>
+        
+        <script src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+{
+		"songs" :[
+		{
+				"name" : "Im not the only one",
+				"artist":"Sam Smith",
+				"album": "In the lonely hour",
+				"src": "../songs/im-not-the-only-one.mp3",
+				"imagen" : "../songs/im-not-the-only-one.jpg"
+				
+		},
+		{
+				"name" : "The Monster",
+				"artist":"Eminem ft Rihanna",
+				"album": "The Marshall Mathers LP2",
+				"src": "the-monster.mp3",
+				"imagen": "the-monster.jpg"
+
+		},
+		{
+				"name" : "",
+				"artist":"",
+				"album": "",
+				"src": "",
+				"imagen": ""
+
+		},
+		{
+				"name" : "",
+				"artist":"",
+				"album": "",
+				"src": "",
+				"imagen": ""
+
+		}
+		]
+}
