@@ -74,10 +74,10 @@
 	// Javascript Class using Revealing Module Pattern
 	window.Player = function(){
 		
-		init();
 
 		// Revealing Module Pattern
 		return {
+			init: init(),
 			play: 	play,
 			pause: 	pause,
 			repeat: repeat,

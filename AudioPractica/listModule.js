@@ -1,4 +1,4 @@
-(function(window, undefined){
+List = function(){
 	var cargar = 'lista.json';
 	function loadJSON() {
 	    var xobj = new XMLHttpRequest();
@@ -16,17 +16,16 @@
 	  function callback(data){
 	  	try{
 	  		var songsList = JSON.parse(data);
-	  		createList(songsList);
+	  		printList(songsList);
 	  	}catch(error){
 	  		console.error('ERROR JSON', error);
 	  	}
 	  }
 
 	  //Valor del parametro callback
-	  loadJSON(callback);
 
-	  function createList (data) {
-	  	console.log(data.songs);
+	  function printList (data) {
+	  	//console.log(data.songs);
 	  	var list = '<ul class="reproduction-list">' ;
 	  	for (var i = 0 ; i < data.songs.length; i++) {
 	  		list += '<li><img src="'+ data.songs[i].imagen +'"><h2>'+ data.songs[i].name + '</h2><h3>' + data.songs[i].artist + '</h3><h4>' + data.songs[i].album +'</h4></li>';
@@ -38,4 +37,14 @@
 	  	console.log(list);
 	  }
 
-})(window, undefined);
+		
+
+		// Revealing Module Pattern
+		this.createList = function() {
+
+			loadJSON(callback);
+		}	
+
+
+
+}
