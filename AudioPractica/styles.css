@@ -1,9 +1,67 @@
-li {
+body {
+	background-color: rgba(0,0,0,0.8);
+	color: #fff;
+}
+.song{
 	list-style: none;
 }
 
-li img{
-	height: 50px;
-	width: 50px;
+.song img{
+	display: inline-block;
+	height: 80px;
+	vertical-align: top;
+	width: 80px;
+}
 
+.song-info {
+	display: inline-block;
+	vertical-align: top;
+	height: 80px;
+	margin: 0 0 0 5px;
+}
+.song .name {
+	font-size: 2.5rem;
+	margin: 0 0 5px 0;
+}
+
+.song .artist {
+	font-size: 1.8rem;
+	margin: 0 0 5px 0;
+}
+
+.song .album {
+	font-size: 1.3rem;
+	margin: 0;
+}
+
+.btn-control {
+	height: 5rem;
+	width: 5rem;
+	border-radius: 50%;
+	border: solid 2px #fff;
+	background-color: transparent;
+}
+
+.btn-control-big {
+	height: 10rem;
+	width: 10rem;
+	border-radius: 50%;
+	border: solid 2px #fff;
+	background-color: transparent;
+}
+
+.play-icon {
+
+}
+
+.pause-icon {
+
+}
+
+.next-icon {
+	
+}
+
+.previous-icon {
+	
 }
